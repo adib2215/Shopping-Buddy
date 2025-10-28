@@ -26,9 +26,10 @@
     <header class="sticky top-0 z-50 bg-white shadow-lg">
         <div class="mx-auto flex justify-between items-center py-3.5 px-3 xl:px-4">
             <a href="#" class="text-3xl font-extrabold text-green-600 flex items-center gap-2">
-                <i class="fa-solid fa-basket-shopping text-red-600"></i>
+                <i class="fa-solid fa-basket-shopping text-red-600"></i>Shopping<span>Buddy</span>
             </a>
 
+            <!-- desktop -->
             <nav class="hidden lg:flex gap-4 xl:gap-8 text-lg font-medium">
                 <a href="#home" class="hover:text-green-600 transition">Home</a>
                 <a href="#deal" class="hover:text-green-600 transition">Deals</a>
@@ -36,6 +37,33 @@
                 <a href="#team" class="hover:text-green-600 transition">Team</a>
                 <a href="#about" class="hover:text-green-600 transition">About</a>
                 <a href="#contact" class="hover:text-green-600 transition">Contact</a>
+            </nav>
+            <!-- desktop search-->
+            <div class="hidden lg:flex items-center bg-gray-100 rounded-lg px-3 py-1 border-gray-400">
+                <input type="text" placeholder="Search fruits..." class="bg-transparent py-2 outline-none w-40 text-sm">
+                <i class="fa-solid fa-magnifying-glass text-green-600 ml-2"></i>
+            </div>
+
+            <!-- mobile hamburger -->
+            <button id="menu-btn" class="lg:hidden text-2xl text-gray-700">
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
+            </button>
+
+          
+           
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200 pb-3 md:pb-4">
+            <nav class="flex flex-col px-4 py-3 font-medium text-base md:text-lg">
+                <a href="#home" class="py-2 px-2 rounded hover:bg-green-50">Home</a>
+                <a href="#deal" class="py-2 px-2 rounded hover:bg-green-50">Deals</a>
+                <a href="#products" class="py-2 px-2 rounded hover:bg-green-50">Products</a>
+                <a href="#team" class="py-2 px-2 rounded hover:bg-green-50">Team</a>
+                <a href="#about" class="py-2 px-2 rounded hover:bg-green-50">About</a>
+                <a href="#contact" class="py-2 px-2 rounded hover:bg-green-50">Contact</a>
+                <div class="hidden lg:flex items-center bg-gray-100 rounded-lg px-3 py-1 border-gray-400">
+                    <input type="text" placeholder="Search fruits..." class="bg-transparent outline-none w-full text-sm">
+                    <i class="fa-solid fa-magnifying-glass text-green-600 ml-2"></i>
+                </div>
             </nav>
         </div>
     </header>
@@ -45,5 +73,9 @@
     <footer>
 
     </footer>
+
+    <script src="https://kit.fontawesome.com/2c2c3a511e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
